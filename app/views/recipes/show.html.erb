@@ -1,0 +1,28 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @recipe.title %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= image_tag @recipe.image %>
+</p>
+
+<p>
+  <strong>List of tags:</strong>
+  <%= safe_join @recipe.list_of_tags, ', ' %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @recipe.description %>
+</p>
+
+<p>
+  <strong>Chef name:</strong>
+  <%= @recipe.chef_name %>
+</p>
+
+<%= link_to 'Back', recipes_path %>

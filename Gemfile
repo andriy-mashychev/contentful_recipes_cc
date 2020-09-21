@@ -47,3 +47,5 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem "contentful", "~> 2.15"
+
+gem "actionpack-action_caching", "~> 1.2"

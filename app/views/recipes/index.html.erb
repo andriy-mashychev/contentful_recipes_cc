@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Recipes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Image</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @recipes.each do |recipe| %>
+      <tr>
+        <td>
+          <strong>
+          <%= link_to recipe_path(recipe.id) do %>
+            <%= recipe.title %>
+          <% end %>
+          </strong>
+        </td>
+        <td>
+          <%= link_to recipe_path(recipe.id) do %>
+            <%= image_tag recipe.image %>
+          <% end %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
